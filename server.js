@@ -8,7 +8,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+app.use(express.static('public'));
 // Google Sheets Auth
 const auth = new google.auth.GoogleAuth({
   credentials: {
